@@ -1,0 +1,47 @@
+ *Protect a Branch on GitHub*
+To protect a branch on GitHub:
+
+Go to your repository on GitHub.
+Click on the Settings tab.
+In the left sidebar, click Branches.
+Under the "Branch protection rules" section, click Add rule.
+In the "Branch name pattern" field, specify the branch you want to protect (e.g., main, develop).
+
+ *To remove protection from a branch:*
+
+Go to your repository on GitHub.
+Click on the Settings tab.
+In the left sidebar, click Branches.
+Under "Branch protection rules," find the rule associated with the branch you want to unlock.
+Click the Delete button next to the branch protection rule.
+Confirm the deletion of the rule.
+
+
+
+  **Cloning one branch from github**
+
+git clone --branch <branch-name> --single-branch <repository-url>
+
+
+
+push Issue:
+
+
+
+# Fetch the latest changes from the remote repository
+git fetch origin
+
+# Merge or rebase
+git merge origin/Tasks  # OR git rebase origin/Tasks
+
+# Resolve conflicts if necessary, then stage the changes
+git add <file_with_conflicts>
+git commit  # Only for merge
+
+# If rebasing, continue rebasing
+git rebase --continue  # Only for rebase
+
+# Finally, push your changes
+git push origin Tasks
+
+

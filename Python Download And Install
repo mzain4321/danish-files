@@ -1,0 +1,16 @@
+*Download python.org*
+
+	wget https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz
+
+	tar -xvf Python-x.x.x.tgz
+
+Replace x.x.x with the version number you downloaded.
+	sudo apt update
+	sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+
+	cd Python-x.x.x
+	./configure --enable-optimizations
+	make -j $(nproc)
+	sudo make altinstall
+
+
